@@ -1,5 +1,7 @@
 {
   "version": 2,
+  "public": "./",
+  "outputDirectory": "dist",
   "builds": [
     {
       "src": "index.html",

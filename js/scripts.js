@@ -51,23 +51,33 @@ window.addEventListener('DOMContentLoaded', event => {
         });    });    // Activate SimpleLightbox plugin for portfolio items
     new SimpleLightbox({
         elements: '#portfolio a.portfolio-box'
-    });    // Initialize AOS
-    AOS.init({
-        duration: 1000,        // animation duration in ms
-        easing: 'ease-out-back', // easing for animation
-        once: true,            // whether animation should happen only once
-        mirror: true,          // whether elements should animate out while scrolling past them
-        offset: 120,           // offset (in px) from the original trigger point
-        delay: 100,            // delay animation (ms)
-        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-        disable: false,        // enable animations on mobile devices
-        startEvent: 'DOMContentLoaded' // name of the event dispatched on the document, that AOS should initialize on
-    });
-    
-    // Refresh AOS when images are loaded to ensure proper positioning
-    window.addEventListener('load', function() {
-        AOS.refresh();
-    });
+    });    // Initialize AOS with error handling
+    try {
+        AOS.init({
+            duration: 1000,        // animation duration in ms
+            easing: 'ease-out-back', // easing for animation
+            once: true,            // whether animation should happen only once
+            mirror: true,          // whether elements should animate out while scrolling past them
+            offset: 120,           // offset (in px) from the original trigger point
+            delay: 100,            // delay animation (ms)
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+            disable: false,        // enable animations on mobile devices
+            startEvent: 'DOMContentLoaded' // name of the event dispatched on the document, that AOS should initialize on
+        });
+        
+        // Refresh AOS when all images are loaded
+        window.addEventListener('load', function() {
+            AOS.refresh();
+        });
+    } catch (error) {
+        console.error('Error initializing AOS animations:', error);
+        // Fallback - remove all AOS attributes to prevent visible unprocessed attributes
+        document.querySelectorAll('[data-aos]').forEach(el => {
+            el.removeAttribute('data-aos');
+            el.removeAttribute('data-aos-delay');
+            el.removeAttribute('data-aos-duration');
+        });
+    }
     
     // Add hover effect to feature cards for touch devices
     const featureCards = document.querySelectorAll('.feature-card');

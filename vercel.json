@@ -11,20 +11,5 @@
       "src": "/(.*)",
       "dest": "/index.html"
     }
-  ],
-  "assets": [
-    {
-      "href": "/css/styles.css",
-      "rel": "stylesheet"
-    },
-    {
-      "href": "/js/scripts.js",
-      "rel": "script"
-    },
-   
-    {
-      "src": "/assets/",
-      "alt": "Tadaber Logo"
-    }
   ]
 }

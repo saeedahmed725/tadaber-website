@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Tadaber - A Quran and Islamic application with no ads" />
+    <meta name="Tadabar" content="" />
+    <title>Tadabar - تَدَبَّرَ</title>    <!-- Favicon-->
+    <link rel="icon" href="./assets/app_logo.svg" />
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Cairo+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Cairo:400,300,300italic,400italic,700,700italic"
+        rel="stylesheet" type="text/css" />
+    <!-- SimpleLightbox plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <!-- AOS CSS -->    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom animations CSS -->
+    <link href="./css/animations.css" rel="stylesheet">
+    <!-- Language Switcher CSS -->
+    <link href="./css/language-switcher.css" rel="stylesheet">
+    <!-- Core theme CSS (includes Bootstrap)-->    <link href="./css/styles.css" rel="stylesheet" />
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "Tadabar - تَدَبَّرَ",
+        "description": "A Quran and Islamic application with no ads",
+        "operatingSystem": "Android",
+        "applicationCategory": "ReligiousApp",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Saeed Ahmed"
+        }
+    }
+    </script>
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="./assets/logoA12.png" as="image">
+    <link rel="preload" href="./css/styles.css" as="style">
+    <link rel="preload" href="./js/scripts.js" as="script">
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/logoA12.png" alt="Tadaber Logo" class="navbar-logo">
+                <span id="brand-text">Tadaber - تَدَبَّرَ</span>
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Feature">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Download">Download</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                </ul>                <div class="language-switcher">
+                    <a href="./index.html">عربي</a>
+                    <span class="separator">|</span>
+                    <a href="./index_en.html" class="active">English</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container px-4 px-lg-5 h-100">
+            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                <div class="mt-4">
+                    <a class="btn btn-primary btn-xl"
+                        style="margin-top: 250px; background-color: #0E6D5E; font-size: large; padding-left: 70px; padding-right: 70px;"
+                        href="#Download" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">Download</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- About-->
+    <section class="page-section" style="background-color: #0E6D5E;font-size: 1.2rem;" id="about">
+        <div class="container px-4 px-lg-5" style="background-color: #0E6D5E;">
+            <h2 class="text-center mt-0 text-white mb-4" data-aos="zoom-in" data-aos-duration="800">About the App</h2>
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <!-- Right Screen -->
+                <div class="col-lg-4 text-center" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="assets/mushaf.png" alt="Image" height="500" data-aos="blur-effect"
+                        data-aos-duration="1200" style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); border-radius: 35px;">
+                    <hr class="divider divider-light" />
+                    <p class="text-white-75 mb-4 slide-up-blur" style="font-size: 25px;" data-aos="fade-up"
+                        data-aos-delay="200">Beautiful Quran Layout</p>
+                </div>
+
+                <!-- Mid Screen -->
+                <div class="col-lg-4 text-center" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="./assets/Home.png" alt="Image" height="500" data-aos="blur-effect" data-aos-duration="1200"
+                        style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); border-radius: 30px;">
+                    <hr class="divider divider-light" />
+                    <p class="text-white-75 mb-4 slide-up-blur" style="font-size: 25px;" data-aos="fade-up"
+                        data-aos-delay="200">Attractive Design</p>
+                </div>
+
+                <!-- Left Screen -->
+                <div class="col-lg-4 text-center" data-aos="fade-left" data-aos-duration="1000">
+                    <img src="assets/surah scrolling.png" alt="Image" height="500" data-aos="blur-effect"
+                        data-aos-duration="1200" style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); border-radius: 35px;">
+                    <hr class="divider divider-light" />
+                    <p class="text-white-75 mb-4 slide-up-blur" style="font-size: 25px;" data-aos="fade-up"
+                        data-aos-delay="200">Great Reading Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="page-section features-bg" id="Feature">
+        <div class="container px-4 px-lg-5">
+            <h2 class="text-center mt-0 feature-section-heading" data-aos="fade-down" data-aos-duration="800">Features</h2>
+            <p class="text-center text-muted mb-5" data-aos="fade-up" data-aos-delay="200">Discover the exceptional features in Tadaber app that enhance your experience</p>
+
+            <div class="row g-4">
+                <!-- Card for "No Ads or Purchases" -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 feature-card">
+                        <div class="card-body text-center">
+                            <div class="feature-icon">
+                                <i class="bi bi-badge-ad-fill"></i>
+                            </div>
+                            <h5 class="card-title">No Ads or Purchases</h5>
+                            <p class="card-text">Enjoy an experience free from annoying ads and without any hidden in-app purchases.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card for "Holy Quran" -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 feature-card">
+                        <div class="card-body text-center">
+                            <div class="feature-icon">
+                                <i class="bi bi-book"></i>
+                            </div>
+                            <h5 class="card-title">Holy Quran</h5>
+                            <p class="card-text">Read, listen to, and explore the Holy Quran with an easy and enjoyable interface.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card for "Qiblah" -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 feature-card">
+                        <div class="card-body text-center">
+                            <div class="feature-icon">
+                                <i class="bi bi-compass"></i>
+                            </div>
+                            <h5 class="card-title">Qiblah</h5>
+                            <p class="card-text">Find the Qiblah direction accurately using modern technologies to determine the correct direction.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card for "Multiple Recitations" -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card h-100 feature-card">
+                        <div class="card-body text-center">
+                            <div class="feature-icon">
+                                <i class="bi bi-mic"></i>
+                            </div>
+                            <h5 class="card-title">Multiple Recitations</h5>
+                            <p class="card-text">Listen to a variety of recitations of the Holy Quran by prominent reciters.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card for "Hadith Books" -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card h-100 feature-card">
+                        <div class="card-body text-center">
+                            <div class="feature-icon">
+                                <i class="bi bi-journal-richtext"></i>
+                            </div>
+                            <h5 class="card-title">Hadith Books</h5>
+                            <p class="card-text">Enjoy access to a comprehensive collection of authentic hadith books.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card for "Tafsir Books" -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="card h-100 feature-card">
+                        <div class="card-body text-center">
+                            <div class="feature-icon">
+                                <i class="bi bi-book-half"></i>
+                            </div>
+                            <h5 class="card-title">Tafsir Books</h5>
+                            <p class="card-text">Explore a diverse collection of authoritative Tafsir books for a deeper understanding of the Quran.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card for "Quran Radio" -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="700">
+                    <div class="card h-100 feature-card">
+                        <div class="card-body text-center">
+                            <div class="feature-icon">
+                                <i class="bi bi-broadcast"></i>
+                            </div>
+                            <h5 class="card-title">Quran Radio</h5>
+                            <p class="card-text">Listen to Quranic recitations on Quran Radio from various global channels.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card for "Prayer Timing" -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="800">
+                    <div class="card h-100 feature-card">
+                        <div class="card-body text-center">
+                            <div class="feature-icon">
+                                <i class="bi bi-clock"></i>
+                            </div>
+                            <h5 class="card-title">Prayer Times</h5>
+                            <p class="card-text">Stay constantly informed of accurate prayer times with reminder notifications.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card for "Many more..." -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="900">
+                    <div class="card h-100 feature-card">
+                        <div class="card-body text-center">
+                            <div class="feature-icon">
+                                <i class="bi bi-plus-circle"></i>
+                            </div>
+                            <h5 class="card-title">And More...</h5>
+                            <p class="card-text">Explore more features and options available in the Tadaber application.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Download -->
+    <section class="page-section download-section" id="Download">
+        <div class="container px-4 px-lg-5 download-content">
+            <div class="row align-items-center">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <h2 class="download-title" data-aos="fade-down" data-aos-duration="800">Download Our App Now Completely Free</h2>
+                    <p class="download-description" data-aos="fade-up" data-aos-delay="200">
+                        Enjoy a unique experience with the Tadaber app for the Holy Quran, adhkar, and supplications. The app is available for free and without ads.
+                    </p>
+                    <a class="download-btn"
+                        href="https://github.com/saeedahmed725/tadaber-website/releases/download/v2025.15.1.1/app-release.apk"
+                        data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000">
+                        <i class="bi bi-download"></i>
+                        Download Now
+                    </a>
+                    <div class="download-info" data-aos="fade-up" data-aos-delay="400">
+                        Current Version: v2025.15.1.1 • Compatible with Android 6.0 and above
+                    </div>
+                </div>
+                <div class="col-lg-5 mt-5 mt-lg-0">
+                    <div class="download-mockup" data-aos="fade-left" data-aos-duration="1000">
+                        <img src="./assets/Home.png" alt="Tadaber App - Mushaf" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact -->
+    <section class="page-section contact-section" id="contact">
+        <div class="container px-4 px-lg-5">
+            <h2 class="text-center contact-heading" data-aos="fade-down" data-aos-duration="800">Contact Us</h2>
+
+            <div class="row g-4 align-items-stretch">
+                <!-- Contact Form (Left Side) -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="contact-form-wrapper h-100" data-aos="fade-right" data-aos-delay="200">
+                        <div class="form-header">
+                            <div class="form-icon-wrapper">
+                                <i class="bi bi-envelope-paper-heart">
+                                    <img src="assets/logoA12.png" alt="Logo" class="form-icon" style="width: 60px; height: 60px;" fit="cover">
+                                </i>
+                            </div>
+                            <h3 class="contact-form-title">Send Us a Message</h3>
+                            <p class="text-muted mb-4">We're happy to hear your opinions and suggestions</p>
+                        </div>
+                        <form id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Name">
+                                        <label for="name" class="form-label">Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Email">
+                                        <label for="email" class="form-label">Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                        <label for="subject" class="form-label">Subject</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" id="message" placeholder="Your Message" style="height: 150px"></textarea>
+                                        <label for="message" class="form-label">Your Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button class="submit-btn" type="submit">
+                                        <i class="bi bi-send me-2"></i>
+                                        Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Contact Cards (Right Side) -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="contact-cards-container" data-aos="fade-left" data-aos-delay="200">
+                        <div class="contacts-header">
+                            <div class="contacts-icon-wrapper">
+                                <i class="bi bi-person-lines-fill"></i>
+                            </div>
+                            <h3 class="contacts-title">Contact Methods</h3>
+                            <p class="text-muted mb-4">Choose the contact method that suits you</p>
+                        </div>
+
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="contact-card text-center" data-aos="zoom-in" data-aos-delay="300">
+                                    <div class="contact-icon">
+                                        <i class="bi bi-facebook"></i>
+                                    </div>
+                                    <h5 class="contact-title">Facebook</h5>
+                                    <p class="contact-text">Follow us for the latest updates</p>
+                                    <a href="https://www.facebook.com/saeedahmedsaeed725" target="_blank" class="contact-link">
+                                        <i class="bi bi-box-arrow-up-right me-1"></i>
+                                        Visit Page
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="contact-card text-center" data-aos="zoom-in" data-aos-delay="400">
+                                    <div class="contact-icon">
+                                        <i class="bi bi-instagram"></i>
+                                    </div>
+                                    <h5 class="contact-title">Instagram</h5>
+                                    <p class="contact-text">Follow us to see our daily posts</p>
+                                    <a href="https://www.instagram.com/saeedahmedv" target="_blank" class="contact-link">
+                                        <i class="bi bi-box-arrow-up-right me-1"></i>
+                                        Visit Page
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="contact-card text-center" data-aos="zoom-in" data-aos-delay="500">
+                                    <div class="contact-icon">
+                                        <i class="bi bi-github"></i>
+                                    </div>
+                                    <h5 class="contact-title">GitHub</h5>
+                                    <p class="contact-text">Follow our open source projects</p>
+                                    <a href="https://www.github.com/saeedahmed725" target="_blank" class="contact-link">
+                                        <i class="bi bi-box-arrow-up-right me-1"></i>
+                                        Visit Page
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="contact-card text-center" data-aos="zoom-in" data-aos-delay="600">
+                                    <div class="contact-icon">
+                                        <i class="bi bi-linkedin"></i>
+                                    </div>
+                                    <h5 class="contact-title">LinkedIn</h5>
+                                    <p class="contact-text">Connect for professional collaboration</p>
+                                    <a href="https://www.linkedin.com/in/saeed-ahmed-saeed/" target="_blank" class="contact-link">
+                                        <i class="bi bi-box-arrow-up-right me-1"></i>
+                                        Visit Page
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer-->
+    <footer class="bg-light py-5">
+        <div class="container px-4 px-lg-5">
+            <div class="small text-center text-muted">Copyright &copy; 2024 - Saeed Ahmed</div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SimpleLightbox plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Core theme JS-->
+    <script src="./js/scripts.js" defer></script>
+    <!-- Contact form handling -->
+    <script src="./js/contact-form.js" defer></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+
+</html>

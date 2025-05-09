@@ -60,7 +60,7 @@ window.addEventListener('DOMContentLoaded', event => {
         offset: 120,           // offset (in px) from the original trigger point
         delay: 100,            // delay animation (ms)
         anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-        disable: 'mobile',     // accepts boolean or a function to determine if animations should be disabled
+        disable: false,        // enable animations on mobile devices
         startEvent: 'DOMContentLoaded' // name of the event dispatched on the document, that AOS should initialize on
     });
     

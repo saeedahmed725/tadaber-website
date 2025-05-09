@@ -4,12 +4,16 @@
     {
       "src": "index.html",
       "use": "@vercel/static"
-    },
+    }
+  ],
+  "routes": [
     {
-      "src": "index_en.html",
-      "use": "@vercel/static"
-    },
-      {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "assets": [
+    {
       "href": "/css/styles.css",
       "rel": "stylesheet"
     },
@@ -21,12 +25,6 @@
     {
       "src": "/assets/",
       "alt": "Tadaber Logo"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
     }
   ]
 }

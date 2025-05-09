@@ -1,318 +1,449 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#0E6D5E">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="msapplication-TileColor" content="#0E6D5E">
+    <meta name="msapplication-TileImage" content="assets/app_logo.svg">
+    <meta name="msapplication-config" content="assets/app_logo.svg">
+    <meta name="apple-mobile-web-app-title" content="تَدَبَّرَ">
+    <meta name="application-name" content="تَدَبَّرَ">
+    <meta name="description" content="تطبيق تدبر - المصحف" />
+    <meta name="keywords" content="تطبيق تدبر, المصحف, القرآن الكريم, الأذكار, الأدعية" />
+    <meta name="author" content="Saeed Ahmed" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="google" content="notranslate" />
+    <meta name="google-site-verification" content="your-verification-code" />
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="Saeed Ahmed Saeed" />
-    <title>Tadaber - تَدَبَّرَ</title>
-    <!-- Favicon-->
-    <link rel="icon" href="assets/app_logo.svg" />
-    <!-- Bootstrap Icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Cairo+Sans:400,700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Cairo:400,300,300italic,400italic,700,700italic"
-        rel="stylesheet" type="text/css" />
-    <!-- SimpleLightbox plugin CSS-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
-</head>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="Tadabar" content="" />
+        <title>Tadabar - تَدَبَّرَ</title>
+        <!-- Favicon-->
+        <link rel="icon" href="assets/app_logo.svg" />
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Cairo+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Cairo:400,300,300italic,400italic,700,700italic"
+            rel="stylesheet" type="text/css" /> <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css"
+            rel="stylesheet" />
+        <!-- AOS CSS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- Custom animations CSS -->
+        <link href="css/animations.css" rel="stylesheet">
+        <!-- Language Switcher CSS -->
+        <link href="css/language-switcher.css" rel="stylesheet">
+        <!-- Navbar Brand Hover Effect CSS -->
+        <link href="css/navbar-brand-hover.css" rel="stylesheet">
 
-<body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-        <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="#page-top">Tadaber - تَدَبَّرَ</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="#about">حول</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Feature">المميزات</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Download">تحميل</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">أتصل بنا</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Masthead-->
-    <header class="masthead">
-        <div class="container px-4 px-lg-5 h-100">
-            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
-                <div class="mt-4">
-                    <a class="btn btn-primary btn-xl"
-                        style="margin-top: 250px; background-color: #0E6D5E; font-family: Cairo; font-size: large; padding-left: 70px; padding-right: 70px;"
-                        href="#Download">تحميل</a>
-                </div>
-            </div>
-        </div>
-    </header>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
 
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container px-4 px-lg-5"> <a class="navbar-brand" href="#">
+                    <img src="assets/logoA12.png" alt="Tadaber Logo" class="navbar-logo">
+                    <span id="brand-text">Tadabar - تَدَبَّرَ</span>
+                </a>
 
-    <!-- About-->
-    <section class="page-section" style="background-color: #0E6D5E;font-size: 1.2rem;" id="about">
-        <div class="container px-4 px-lg-5" style="background-color: #0E6D5E;">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-               
-                <!-- Right Screen -->
-                <div class="col-lg-4 text-center">
-                    <img src="assets/mushaf.png" alt="Image" height="500"
-                        style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); border-radius: 35px;">
-                    <hr class="divider divider-light" />
-                    <p class="text-white-75 mb-4" style="font-size: 50;">شكل رائع للمصحف</p>
-                </div>
-
-                <!-- Mid Screen -->
-                <div class="col-lg-4 text-center">
-                    <img src="assets/Home.png" alt="Image" height="500"
-                        style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); border-radius: 30px;">
-                    <hr class="divider divider-light" />
-                    <p class="text-white-75 mb-4" style="font-size: 25px;">تصميم جذاب</p>
-                </div>
-
-                 <!-- Left Screen -->
-                 <div class="col-lg-4 text-center">
-                    <img src="assets/surah scrolling.png" alt="Image" height="500"
-                        style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); border-radius: 35px;">
-                    <hr class="divider divider-light" />
-                    <p class="text-white-75 mb-4" style="font-size: 50;">شكل رائع للقراءة</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- Features -->
-    <section class="page-section" id="Feature" dir="rtl">
-        <div class="container px-4 px-lg-5">
-            <h2 class="text-center mt-0">المميزات</h2>
-            <hr class="divider" style="background-color: #0E6D5E;" />
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                <!-- Card for "No Ads or Purchases" -->
-                <div class="col mb-2">
-                    <div class="card h-100"
-                        style="box-shadow: 0 0 5px #0e6d5f9d; border-radius: 12px; border: 2px solid #0e6d5f5e;">
-                        <div class="card-body">
-                            <h5 class="card-title">بدون إعلانات أو مشتريات</h5>
-                            <p class="card-text">استمتع بتجربة خالية من الإعلانات دون أي مشتريات.</p>
-                        </div>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#about">حول</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Feature">المميزات</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Download">تحميل</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">أتصل بنا</a></li>
+                    </ul>
+                    <div class="language-switcher">
+                        <a href="index.html" class="active">عربي</a>
+                        <span class="separator">|</span>
+                        <a href="index_en.html">English</a>
                     </div>
                 </div>
-
-                <!-- Card for "Holy Quran" -->
-                <div class="col mb-2">
-                    <div class="card h-100"
-                        style="box-shadow: 0 0 5px #0e6d5f9d; border-radius: 12px; border: 2px solid #0e6d5f5e;">
-                        <div class="card-body">
-                            <h5 class="card-title">القرآن الكريم</h5>
-                            <p class="card-text">اقرأ، استمع، واستكشف القرآن الكريم بسهولة.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card for "Qiblah" -->
-                <div class="col mb-2">
-                    <div class="card h-100"
-                        style="box-shadow: 0 0 5px #0e6d5f9d; border-radius: 12px; border: 2px solid #0e6d5f5e;">
-                        <div class="card-body">
-                            <h5 class="card-title">القبلة</h5>
-                            <p class="card-text">ابحث عن اتجاه القبلة بدقة.</p>
-                        </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 h-100">
+                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                    <div class="mt-4">
+                        <a class="btn btn-primary btn-xl"
+                            style="margin-top: 250px; background-color: #0E6D5E; font-size: large; padding-left: 70px; padding-right: 70px;"
+                            href="#Download" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">تحميل</a>
                     </div>
                 </div>
             </div>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                <!-- Card for "Multiple Recitations" -->
-                <div class="col mb-2">
-                    <div class="card h-100"
-                        style="box-shadow: 0 0 5px #0e6d5f9d; border-radius: 12px; border: 2px solid #0e6d5f5e;">
-                        <div class="card-body">
-                            <h5 class="card-title">التلاوات المتعددة</h5>
-                            <p class="card-text">اسمع مجموعة من التلاوات المتعددة للقرآن الكريم.</p>
-                        </div>
+        </header> <!-- About-->
+        <section class="page-section" style="background-color: #0E6D5E;font-size: 1.2rem;" id="about">
+            <div class="container px-4 px-lg-5" style="background-color: #0E6D5E;">
+                <h2 class="text-center mt-0 text-white mb-4" data-aos="zoom-in" data-aos-duration="800">حول التطبيق</h2>
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <!-- Right Screen -->
+                    <div class="col-lg-4 text-center" data-aos="fade-right" data-aos-duration="1000">
+                        <img src="assets/mushaf.png" alt="Image" height="500" data-aos="blur-effect"
+                            data-aos-duration="1200"
+                            style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); border-radius: 35px;">
+                        <hr class="divider divider-light" />
+                        <p class="text-white-75 mb-4 slide-up-blur" style="font-size: 25px;" data-aos="fade-up"
+                            data-aos-delay="200">شكل رائع للمصحف</p>
+                    </div>
+
+                    <!-- Mid Screen -->
+                    <div class="col-lg-4 text-center" data-aos="fade-up" data-aos-duration="1000">
+                        <img src="assets/Home.png" alt="Image" height="500" data-aos="blur-effect"
+                            data-aos-duration="1200"
+                            style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); border-radius: 30px;">
+                        <hr class="divider divider-light" />
+                        <p class="text-white-75 mb-4 slide-up-blur" style="font-size: 25px;" data-aos="fade-up"
+                            data-aos-delay="200">تصميم جذاب</p>
+                    </div>
+
+                    <!-- Left Screen -->
+                    <div class="col-lg-4 text-center" data-aos="fade-left" data-aos-duration="1000">
+                        <img src="assets/surah scrolling.png" alt="Image" height="500" data-aos="blur-effect"
+                            data-aos-duration="1200"
+                            style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); border-radius: 35px;">
+                        <hr class="divider divider-light" />
+                        <p class="text-white-75 mb-4 slide-up-blur" style="font-size: 25px;" data-aos="fade-up"
+                            data-aos-delay="200">شكل رائع للقراءة</p>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <!-- Card for "Hadith Books" -->
-                <div class="col mb-2">
-                    <div class="card h-100"
-                        style="box-shadow: 0 0 5px #0e6d5f9d; border-radius: 12px; border: 2px solid #0e6d5f5e;">
-                        <div class="card-body">
-                            <h5 class="card-title">كتب الحديث</h5>
-                            <p class="card-text">استمتع بالوصول إلى مجموعة من كتب الحديث.</p>
+        <!-- Features -->
+        <section class="page-section features-bg" id="Feature" dir="rtl">
+            <div class="container px-4 px-lg-5">
+                <h2 class="text-center mt-0 feature-section-heading" data-aos="fade-down" data-aos-duration="800">
+                    المميزات
+                </h2>
+                <p class="text-center text-muted mb-5" data-aos="fade-up" data-aos-delay="200">اكتشف الميزات المتميزة في
+                    تطبيق تدبر التي تجعل تجربتك أكثر إثراءً</p>
+
+                <div class="row g-4">
+                    <!-- Card for "No Ads or Purchases" -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card h-100 feature-card">
+                            <div class="card-body text-center">
+                                <div class="feature-icon">
+                                    <i class="bi bi-badge-ad-fill"></i>
+                                </div>
+                                <h5 class="card-title">بدون إعلانات أو مشتريات</h5>
+                                <p class="card-text">استمتع بتجربة خالية من الإعلانات المزعجة ودون أي مشتريات داخلية
+                                    مخفية.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Card for "Tafsir Books" -->
-                <div class="col mb-2">
-                    <div class="card h-100"
-                        style="box-shadow: 0 0 5px #0e6d5f9d; border-radius: 12px; border: 2px solid #0e6d5f5e;">
-                        <div class="card-body">
-                            <h5 class="card-title">كتب التفسير</h5>
-                            <p class="card-text">استكشف مجموعة متنوعة من كتب التفسير.</p>
+                    <!-- Card for "Holy Quran" -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card h-100 feature-card">
+                            <div class="card-body text-center">
+                                <div class="feature-icon">
+                                    <i class="bi bi-book"></i>
+                                </div>
+                                <h5 class="card-title">القرآن الكريم</h5>
+                                <p class="card-text">اقرأ، استمع، واستكشف القرآن الكريم بسهولة مع واجهة سلسة وممتعة.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card for "Qiblah" -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card h-100 feature-card">
+                            <div class="card-body text-center">
+                                <div class="feature-icon">
+                                    <i class="bi bi-compass"></i>
+                                </div>
+                                <h5 class="card-title">القبلة</h5>
+                                <p class="card-text">ابحث عن اتجاه القبلة بدقة باستخدام تقنيات حديثة لتحديد الاتجاه
+                                    الصحيح.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card for "Multiple Recitations" -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card h-100 feature-card">
+                            <div class="card-body text-center">
+                                <div class="feature-icon">
+                                    <i class="bi bi-mic"></i>
+                                </div>
+                                <h5 class="card-title">التلاوات المتعددة</h5>
+                                <p class="card-text">اسمع مجموعة متنوعة من التلاوات المتعددة للقرآن الكريم بأصوات كبار
+                                    القراء.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card for "Hadith Books" -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                        <div class="card h-100 feature-card">
+                            <div class="card-body text-center">
+                                <div class="feature-icon">
+                                    <i class="bi bi-journal-richtext"></i>
+                                </div>
+                                <h5 class="card-title">كتب الحديث</h5>
+                                <p class="card-text">استمتع بالوصول إلى مجموعة شاملة من كتب الحديث النبوي الشريف.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card for "Tafsir Books" -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                        <div class="card h-100 feature-card">
+                            <div class="card-body text-center">
+                                <div class="feature-icon">
+                                    <i class="bi bi-book-half"></i>
+                                </div>
+                                <h5 class="card-title">كتب التفسير</h5>
+                                <p class="card-text">استكشف مجموعة متنوعة من كتب التفسير المعتمدة لفهم أعمق للقرآن
+                                    الكريم.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card for "Quran Radio" -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="700">
+                        <div class="card h-100 feature-card">
+                            <div class="card-body text-center">
+                                <div class="feature-icon">
+                                    <i class="bi bi-broadcast"></i>
+                                </div>
+                                <h5 class="card-title">راديو القرآن</h5>
+                                <p class="card-text">اسمع التلاوات القرآنية على راديو القرآن من مختلف القنوات العالمية.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card for "Prayer Timing" -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="800">
+                        <div class="card h-100 feature-card">
+                            <div class="card-body text-center">
+                                <div class="feature-icon">
+                                    <i class="bi bi-clock"></i>
+                                </div>
+                                <h5 class="card-title">أوقات الصلاة</h5>
+                                <p class="card-text">ابقَ على اطلاع دائم بأوقات الصلاة الدقيقة مع إشعارات للتذكير.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card for "Many more..." -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="900">
+                        <div class="card h-100 feature-card">
+                            <div class="card-body text-center">
+                                <div class="feature-icon">
+                                    <i class="bi bi-plus-circle"></i>
+                                </div>
+                                <h5 class="card-title">المزيد...</h5>
+                                <p class="card-text">استكشف المزيد من الميزات والخيارات المتوفرة في تطبيق تدبر.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                <!-- Card for "Quran Radio" -->
-                <div class="col mb-2">
-                    <div class="card h-100"
-                        style="box-shadow: 0 0 5px #0e6d5f9d; border-radius: 12px; border: 2px solid #0e6d5f5e;">
-                        <div class="card-body">
-                            <h5 class="card-title">راديو القرآن</h5>
-                            <p class="card-text">اسمع التلاوات القرآنية على راديو القرآن.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card for "Prayer Timing" -->
-                <div class="col mb-2">
-                    <div class="card h-100"
-                        style="box-shadow: 0 0 5px #0e6d5f9d; border-radius: 12px; border: 2px solid #0e6d5f5e;">
-                        <div class="card-body">
-                            <h5 class="card-title">أوقات الصلاة</h5>
-                            <p class="card-text">ابقَ على اطلاع دائم بأوقات الصلاة الدقيقة.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card for "Many more..." -->
-                <div class="col mb-2">
-                    <div class="card h-100"
-                        style="box-shadow: 0 0 5px #0e6d5f9d; border-radius: 12px; border: 2px solid #0e6d5f5e;">
-                        <div class="card-body">
-                            <h5 class="card-title">المزيد...</h5>
-                            <p class="card-text">استكشف المزيد من الميزات والخيارات.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
 
-
-
-    <!-- Download -->
-    <section class="page-section text-white" style="background-color: #0E6D5E;" id="Download">
-        <div class="container px-4 px-lg-5 text-center">
-            <h2 class="mb-4">حمل تطبيقنا الآن بشكل مجاني تماماً</h2>
-            <a class="btn btn-light btn-xl"
-                href="https://github.com/saeedahmed725/tadaber-website/releases/download/v2025.15.1.1/app-release.apk">تحميل الآن</a>
-        </div>
-    </section>
-    <!-- Contact -->
-    <section class="page-section" id="contact">
-        <div class="container px-4 px-lg-5">
-            <h2 class="text-center mt-0">تواصل معنا</h2>
-            <hr class="divider" style="background-color: #0E6D5E;" />
-            <div class="row gx-4 gx-lg-5">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="mt-5">
-                        <a href="https://www.facebook.com/saeedahmedsaeed725" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
-                                viewBox="126.445 2.281 589 589" id="facebook">
-                                <circle cx="420.945" cy="296.781" r="294.5" fill="#3c5a9a"></circle>
-                                <path fill="#fff"
-                                    d="M516.704 92.677h-65.239c-38.715 0-81.777 16.283-81.777 72.402.189 19.554 0 38.281 0 59.357H324.9v71.271h46.174v205.177h84.847V294.353h56.002l5.067-70.117h-62.531s.14-31.191 0-40.249c0-22.177 23.076-20.907 24.464-20.907 10.981 0 32.332.032 37.813 0V92.677h-.032z">
-                                </path>
-                            </svg>
+        <!-- Download -->
+        <section class="page-section download-section" id="Download">
+            <div class="container px-4 px-lg-5 download-content">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 text-center text-lg-end">
+                        <h2 class="download-title" data-aos="fade-down" data-aos-duration="800">حمل تطبيقنا الآن بشكل
+                            مجاني
+                            تماماً</h2>
+                        <p class="download-description" data-aos="fade-up" data-aos-delay="200">
+                            استمتع بتجربة فريدة مع تطبيق تدبر للقرآن الكريم والأذكار والأدعية. التطبيق متاح مجانًا وبدون
+                            إعلانات.
+                        </p>
+                        <a class="download-btn"
+                            href="https://github.com/saeedahmed725/tadaber-website/releases/download/v2025.15.1.1/app-release.apk"
+                            data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000">
+                            <i class="bi bi-download"></i>
+                            تحميل الآن
                         </a>
-                        <h6 class="h5 mt-4">الفيسبوك الخاص بي</h6>
-                        <p class="text-muted mb-0">قم بزيارة صفحتنا على فيسبوك للحصول على آخر التحديثات والأخبار.</p>
+                        <div class="download-info" data-aos="fade-up" data-aos-delay="400">
+                            الإصدار الحالي: v2025.15.1.1 • متوافق مع أندرويد 6.0 وما فوق
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="mt-5">
-                        <a href="https://www.instagram.com/saeedahmedv" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 102 102"
-                                id="instagram">
-                                <defs>
-                                    <radialGradient id="a" cx="6.601" cy="99.766" r="129.502"
-                                        gradientUnits="userSpaceOnUse">
-                                        <stop offset=".09" stop-color="#fa8f21"></stop>
-                                        <stop offset=".78" stop-color="#d82d7e"></stop>
-                                    </radialGradient>
-                                    <radialGradient id="b" cx="70.652" cy="96.49" r="113.963"
-                                        gradientUnits="userSpaceOnUse">
-                                        <stop offset=".64" stop-color="#8c3aaa" stop-opacity="0"></stop>
-                                        <stop offset="1" stop-color="#8c3aaa"></stop>
-                                    </radialGradient>
-                                </defs>
-                                <path fill="url(#a)"
-                                    d="M25.865,101.639A34.341,34.341,0,0,1,14.312,99.5a19.329,19.329,0,0,1-7.154-4.653A19.181,19.181,0,0,1,2.5,87.694,34.341,34.341,0,0,1,.364,76.142C.061,69.584,0,67.617,0,51s.067-18.577.361-25.14A34.534,34.534,0,0,1,2.5,14.312,19.4,19.4,0,0,1,7.154,7.154,19.206,19.206,0,0,1,14.309,2.5,34.341,34.341,0,0,1,25.862.361C32.422.061,34.392,0,51,0s18.577.067,25.14.361A34.534,34.534,0,0,1,87.691,2.5a19.254,19.254,0,0,1,7.154,4.653A19.267,19.267,0,0,1,99.5,14.309a34.341,34.341,0,0,1,2.14,11.553c.3,6.563.361,8.528.361,25.14s-.061,18.577-.361,25.14A34.5,34.5,0,0,1,99.5,87.694,20.6,20.6,0,0,1,87.691,99.5a34.342,34.342,0,0,1-11.553,2.14c-6.557.3-8.528.361-25.14.361s-18.577-.058-25.134-.361"
-                                    data-name="Path 16"></path>
-                                <path fill="url(#b)"
-                                    d="M25.865,101.639A34.341,34.341,0,0,1,14.312,99.5a19.329,19.329,0,0,1-7.154-4.653A19.181,19.181,0,0,1,2.5,87.694,34.341,34.341,0,0,1,.364,76.142C.061,69.584,0,67.617,0,51s.067-18.577.361-25.14A34.534,34.534,0,0,1,2.5,14.312,19.4,19.4,0,0,1,7.154,7.154,19.206,19.206,0,0,1,14.309,2.5,34.341,34.341,0,0,1,25.862.361C32.422.061,34.392,0,51,0s18.577.067,25.14.361A34.534,34.534,0,0,1,87.691,2.5a19.254,19.254,0,0,1,7.154,4.653A19.267,19.267,0,0,1,99.5,14.309a34.341,34.341,0,0,1,2.14,11.553c.3,6.563.361,8.528.361,25.14s-.061,18.577-.361,25.14A34.5,34.5,0,0,1,99.5,87.694,20.6,20.6,0,0,1,87.691,99.5a34.342,34.342,0,0,1-11.553,2.14c-6.557.3-8.528.361-25.14.361s-18.577-.058-25.134-.361"
-                                    data-name="Path 17"></path>
-                                <path fill="#fff"
-                                    d="M461.114,477.413a12.631,12.631,0,1,1,12.629,12.632,12.631,12.631,0,0,1-12.629-12.632m-6.829,0a19.458,19.458,0,1,0,19.458-19.458,19.457,19.457,0,0,0-19.458,19.458m35.139-20.229a4.547,4.547,0,1,0,4.549-4.545h0a4.549,4.549,0,0,0-4.547,4.545m-30.99,51.074a20.943,20.943,0,0,1-7.037-1.3,12.547,12.547,0,0,1-7.193-7.19,20.923,20.923,0,0,1-1.3-7.037c-.184-3.994-.22-5.194-.22-15.313s.04-11.316.22-15.314a21.082,21.082,0,0,1,1.3-7.037,12.54,12.54,0,0,1,7.193-7.193,20.924,20.924,0,0,1,7.037-1.3c3.994-.184,5.194-.22,15.309-.22s11.316.039,15.314.221a21.082,21.082,0,0,1,7.037,1.3,12.541,12.541,0,0,1,7.193,7.193,20.926,20.926,0,0,1,1.3,7.037c.184,4,.22,5.194.22,15.314s-.037,11.316-.22,15.314a21.023,21.023,0,0,1-1.3,7.037,12.547,12.547,0,0,1-7.193,7.19,20.925,20.925,0,0,1-7.037,1.3c-3.994.184-5.194.22-15.314.22s-11.316-.037-15.309-.22m-.314-68.509a27.786,27.786,0,0,0-9.2,1.76,19.373,19.373,0,0,0-11.083,11.083,27.794,27.794,0,0,0-1.76,9.2c-.187,4.04-.229,5.332-.229,15.623s.043,11.582.229,15.623a27.793,27.793,0,0,0,1.76,9.2,19.374,19.374,0,0,0,11.083,11.083,27.813,27.813,0,0,0,9.2,1.76c4.042.184,5.332.229,15.623.229s11.582-.043,15.623-.229a27.8,27.8,0,0,0,9.2-1.76,19.374,19.374,0,0,0,11.083-11.083,27.716,27.716,0,0,0,1.76-9.2c.184-4.043.226-5.332.226-15.623s-.043-11.582-.226-15.623a27.786,27.786,0,0,0-1.76-9.2,19.379,19.379,0,0,0-11.08-11.083,27.748,27.748,0,0,0-9.2-1.76c-4.041-.185-5.332-.229-15.621-.229s-11.583.043-15.626.229"
-                                    data-name="Path 18" transform="translate(-422.637 -426.196)"></path>
-                            </svg>
-                        </a>
-                        <h6 class="h5 mt-4">الإنستغرام الخاص بي</h6>
-                        <p class="text-muted mb-0">تابعنا على الإنستغرام لرؤية صورنا ومشاركاتنا اليومية.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="mt-5">
-                        <a href="https://www.github.com/saeedahmed725" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 16 16"
-                                id="github">
-                                <path
-                                    d="M7.999 0C3.582 0 0 3.596 0 8.032a8.031 8.031 0 0 0 5.472 7.621c.4.074.546-.174.546-.387 0-.191-.007-.696-.011-1.366-2.225.485-2.695-1.077-2.695-1.077-.363-.928-.888-1.175-.888-1.175-.727-.498.054-.488.054-.488.803.057 1.225.828 1.225.828.714 1.227 1.873.873 2.329.667.072-.519.279-.873.508-1.074-1.776-.203-3.644-.892-3.644-3.969 0-.877.312-1.594.824-2.156-.083-.203-.357-1.02.078-2.125 0 0 .672-.216 2.2.823a7.633 7.633 0 0 1 2.003-.27 7.65 7.65 0 0 1 2.003.271c1.527-1.039 2.198-.823 2.198-.823.436 1.106.162 1.922.08 2.125.513.562.822 1.279.822 2.156 0 3.085-1.87 3.764-3.652 3.963.287.248.543.738.543 1.487 0 1.074-.01 1.94-.01 2.203 0 .215.144.465.55.386A8.032 8.032 0 0 0 16 8.032C16 3.596 12.418 0 7.999 0z">
-                                </path>
-                            </svg>
-                        </a>
-                        <h6 class="h5 mt-4">الجيتهاب الخاص بي</h6>
-                        <p class="text-muted mb-0">استعرض مشاريعنا وتحقق من التحديثات الأخيرة على جيتهاب.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="mt-5">
-                        <a href="https://www.facebook.com/saeedahmedsaeed725" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none" id="linkedin">
-                                <path fill="#0077B5"
-                                    d="M0 24C0 10.745 10.745 0 24 0s24 10.745 24 24-10.745 24-24 24S0 37.255 0 24Z">
-                                </path>
-                                <path fill="#fff" fill-rule="evenodd"
-                                    d="M17.319 14.823c0 1.569-1.181 2.824-3.078 2.824h-.035c-1.825 0-3.006-1.255-3.006-2.824C11.2 13.22 12.416 12 14.277 12c1.86 0 3.007 1.22 3.042 2.823Zm-.358 5.055V36.22h-5.44V19.878h5.44ZM36.575 36.22v-9.37c0-5.02-2.683-7.356-6.262-7.356-2.888 0-4.18 1.586-4.902 2.699v-2.315h-5.44c.072 1.534 0 16.342 0 16.342h5.44v-9.127c0-.488.035-.975.179-1.325.393-.976 1.288-1.986 2.79-1.986 1.97 0 2.757 1.499 2.757 3.695v8.743h5.438Z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </a>
-                        <h6 class="h5 mt-4">لينكدإن الخاص بي</h6>
-                        <p class="text-muted mb-0">تفضل بالاتصال بنا عبر لينكدإن واستكشاف فرص التوظيف.</p>
+                    <div class="col-lg-5 mt-5 mt-lg-0">
+                        <div class="download-mockup" data-aos="fade-left" data-aos-duration="1000">
+                            <img src="assets/home.png" alt="تطبيق تدبر - المصحف" class="img-fluid">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section> <!-- Contact -->
+        <section class="page-section contact-section" id="contact" dir="rtl">
+            <div class="container px-4 px-lg-5">
+                <h2 class="text-center contact-heading" data-aos="fade-down" data-aos-duration="800">تواصل معنا</h2>
+
+                <div class="row g-4 align-items-stretch">
+                    <!-- Contact Form (Left Side) -->
+                    <div class="col-lg-6 col-md-12 order-lg-1 order-2">
+                        <div class="contact-form-wrapper h-100" data-aos="fade-left" data-aos-delay="200">
+                            <div class="form-header">
+                                <div class="form-icon-wrapper">
+                                    <i class="bi bi-envelope-paper-heart">
+                                        <img src="assets/logoA12.png" alt="Logo" class="form-icon" ,
+                                            style="width: 60px; height: 60px;" , fit="cover">
+                                    </i>
+                                </div>
+                                <h3 class="contact-form-title">أرسل لنا رسالة</h3>
+                                <p class="text-muted mb-4">نحن سعداء بسماع آرائكم واقتراحاتكم</p>
+                            </div>
+                            <form id="contactForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="name" placeholder="الاسم">
+                                            <label for="name" class="form-label">الاسم</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="email"
+                                                placeholder="البريد الإلكتروني">
+                                            <label for="email" class="form-label">البريد الإلكتروني</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="subject" placeholder="الموضوع">
+                                            <label for="subject" class="form-label">الموضوع</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" id="message" placeholder="رسالتك"
+                                                style="height: 150px"></textarea>
+                                            <label for="message" class="form-label">رسالتك</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <button class="submit-btn" type="submit">
+                                            <i class="bi bi-send me-2"></i>
+                                            إرسال الرسالة
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Contact Cards (Right Side) -->
+                    <div class="col-lg-6 col-md-12 order-lg-2 order-1">
+                        <div class="contact-cards-container" data-aos="fade-right" data-aos-delay="200">
+                            <div class="contacts-header">
+                                <div class="contacts-icon-wrapper">
+                                    <i class="bi bi-person-lines-fill"></i>
+                                </div>
+                                <h3 class="contacts-title">وسائل التواصل</h3>
+                                <p class="text-muted mb-4">اختر وسيلة التواصل المناسبة لك</p>
+                            </div>
+
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="contact-card text-center" data-aos="zoom-in" data-aos-delay="300">
+                                        <div class="contact-icon">
+                                            <i class="bi bi-facebook"></i>
+                                        </div>
+                                        <h5 class="contact-title">الفيسبوك</h5>
+                                        <p class="contact-text">تابعنا للحصول على آخر التحديثات</p>
+                                        <a href="https://www.facebook.com/saeedahmedsaeed725" target="_blank"
+                                            class="contact-link">
+                                            <i class="bi bi-box-arrow-up-right me-1"></i>
+                                            زيارة الصفحة
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="contact-card text-center" data-aos="zoom-in" data-aos-delay="400">
+                                        <div class="contact-icon">
+                                            <i class="bi bi-instagram"></i>
+                                        </div>
+                                        <h5 class="contact-title">الإنستغرام</h5>
+                                        <p class="contact-text">تابعنا لرؤية مشاركاتنا اليومية</p>
+                                        <a href="https://www.instagram.com/saeedahmedv" target="_blank"
+                                            class="contact-link">
+                                            <i class="bi bi-box-arrow-up-right me-1"></i>
+                                            زيارة الصفحة
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="contact-card text-center" data-aos="zoom-in" data-aos-delay="500">
+                                        <div class="contact-icon">
+                                            <i class="bi bi-github"></i>
+                                        </div>
+                                        <h5 class="contact-title">جيتهاب</h5>
+                                        <p class="contact-text">تابع مشاريعنا المفتوحة المصدر</p>
+                                        <a href="https://www.github.com/saeedahmed725" target="_blank"
+                                            class="contact-link">
+                                            <i class="bi bi-box-arrow-up-right me-1"></i>
+                                            زيارة الصفحة
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="contact-card text-center" data-aos="zoom-in" data-aos-delay="600">
+                                        <div class="contact-icon">
+                                            <i class="bi bi-linkedin"></i>
+                                        </div>
+                                        <h5 class="contact-title">لينكدإن</h5>
+                                        <p class="contact-text">تواصل للتعاون المهني</p>
+                                        <a href="https://www.linkedin.com/in/saeed-ahmed-saeed/" target="_blank"
+                                            class="contact-link">
+                                            <i class="bi bi-box-arrow-up-right me-1"></i>
+                                            زيارة الصفحة
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
-    <!-- Footer-->
-    <footer class="bg-light py-5">
-        <div class="container px-4 px-lg-5">
-            <div class="small text-center text-muted">Copyright &copy; 2024 - Saeed Ahmed</div>
-        </div>
-    </footer>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- SimpleLightbox plugin JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-</body>
+        <!-- Footer-->
+        <footer class="bg-light py-5">
+            <div class="container px-4 px-lg-5">
+                <div class="small text-center text-muted">Copyright &copy; 2024 - Saeed Ahmed</div>
+            </div>
+        </footer> <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- AOS JS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
 
-</html>
+    </html>

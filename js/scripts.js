@@ -48,12 +48,56 @@ window.addEventListener('DOMContentLoaded', event => {
             if (window.getComputedStyle(navbarToggler).display !== 'none') {
                 navbarToggler.click();
             }
-        });
-    });
-
-    // Activate SimpleLightbox plugin for portfolio items
+        });    });    // Activate SimpleLightbox plugin for portfolio items
     new SimpleLightbox({
         elements: '#portfolio a.portfolio-box'
+    });    // Initialize AOS
+    AOS.init({
+        duration: 1000,        // animation duration in ms
+        easing: 'ease-out-back', // easing for animation
+        once: true,            // whether animation should happen only once
+        mirror: true,          // whether elements should animate out while scrolling past them
+        offset: 120,           // offset (in px) from the original trigger point
+        delay: 100,            // delay animation (ms)
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+        disable: 'mobile',     // accepts boolean or a function to determine if animations should be disabled
+        startEvent: 'DOMContentLoaded' // name of the event dispatched on the document, that AOS should initialize on
+    });
+    
+    // Refresh AOS when images are loaded to ensure proper positioning
+    window.addEventListener('load', function() {
+        AOS.refresh();
+    });
+    
+    // Add hover effect to feature cards for touch devices
+    const featureCards = document.querySelectorAll('.feature-card');
+    if (featureCards.length > 0) {
+        featureCards.forEach(card => {
+            card.addEventListener('touchstart', function() {
+                this.classList.add('hover');
+            }, {passive: true});
+            
+            card.addEventListener('touchend', function() {
+                setTimeout(() => {
+                    this.classList.remove('hover');
+                }, 300);
+            }, {passive: true});
+        });
+    }
+
+    // Toggle 'active' class in the language switcher based on scroll events
+    const languageSwitcher = document.querySelector('.language-switcher');
+    const arabicLink = languageSwitcher.querySelector('a[href="index.html"]');
+    const englishLink = languageSwitcher.querySelector('a[href="index_en.html"]');
+
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 0) {
+            arabicLink.classList.remove('active');
+            englishLink.classList.remove('active');
+        } else {
+            arabicLink.classList.add('active');
+            // Optionally, you can add logic to determine which link should be active.
+        }
     });
 
 });

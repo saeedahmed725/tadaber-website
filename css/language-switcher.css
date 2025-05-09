@@ -1,0 +1,127 @@
+/* Language switcher styles */
+.navbar-logo {
+  height: 30px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+#brand-text {
+  vertical-align: middle;
+}
+
+/* New language switcher styles */
+.language-switcher {
+  margin-left: 15px;
+  padding: 5px 10px;
+  background-color: rgba(255, 255, 255, 0.886);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.language-switcher a {
+  color: #13653f;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 3px 8px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.language-switcher a.active {
+  background-color: #13653f;
+  color: white;
+}
+
+.language-switcher a:hover:not(.active) {
+  color: #0E6D5E;
+}
+
+.language-switcher .separator {
+  margin: 0 5px;
+  color: #13653f;
+  opacity: 0.7;
+}
+
+/* Scrolled state styling */
+#mainNav.navbar-shrink .language-switcher {
+  background-color: rgba(19, 101, 63, 0.1);
+}
+
+/* Mobile responsive styling */
+@media (max-width: 991.98px) {
+  .language-switcher {
+    margin: 10px 0 0 0;
+    justify-content: center;
+  }
+}
+
+#languageDropdown .bi-globe {
+  font-size: 1.1rem;
+  margin-right: 0.25rem;
+}
+
+.dropdown-menu-end {
+  right: 0;
+  left: auto;
+}
+
+.lang-check {
+  visibility: hidden;
+}
+
+.dropdown-item.active .lang-check {
+  visibility: visible;
+}
+
+[data-lang-ar], [data-lang-en] {
+  display: inline-block;
+}
+
+html[lang="en"] [data-lang-ar] {
+  display: none;
+}
+
+html[lang="ar"] [data-lang-en] {
+  display: none;
+}
+
+/* RTL styles for English language */
+html[lang="en"] {
+  direction: ltr;
+}
+
+html[lang="en"] .navbar-nav {
+  padding-right: 0;
+}
+
+html[lang="en"] [dir="rtl"] {
+  direction: ltr;
+}
+
+html[lang="ar"] {
+  direction: rtl;
+}
+
+html[lang="ar"] [dir="rtl"] {
+  direction: rtl;
+}
+
+/* Add visible state for language selection */
+#check-ar {
+  visibility: visible;
+}
+
+#check-en {
+  visibility: hidden;
+}
+
+html[lang="en"] #check-ar {
+  visibility: hidden;
+}
+
+html[lang="en"] #check-en {
+  visibility: visible;
+}

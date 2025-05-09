@@ -93,12 +93,10 @@ window.addEventListener('DOMContentLoaded', event => {
                 }, 300);
             }, {passive: true});
         });
-    }
-
-    // Toggle 'active' class in the language switcher based on scroll events
+    }    // Toggle 'active' class in the language switcher based on scroll events
     const languageSwitcher = document.querySelector('.language-switcher');
-    const arabicLink = languageSwitcher.querySelector('a[href="index.html"]');
-    const englishLink = languageSwitcher.querySelector('a[href="index_en.html"]');
+    const arabicLink = languageSwitcher.querySelector('a[href="./index.html"]');
+    const englishLink = languageSwitcher.querySelector('a[href="./index_en.html"]');
 
     window.addEventListener('scroll', function () {
         if (window.scrollY > 0) {

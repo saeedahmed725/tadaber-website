@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="Tadaber - A Quran and Islamic application with no ads" />
     <meta name="Tadabar" content="" />
-    <title>Tadabar - تَدَبَّرَ</title>
-    <!-- Favicon-->
-    <link rel="icon" href="assets/app_logo.svg" />
+    <title>Tadabar - تَدَبَّرَ</title>    <!-- Favicon-->
+    <link rel="icon" href="./assets/app_logo.svg" />
     <!-- Bootstrap Icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Google fonts-->
@@ -17,21 +16,45 @@
         rel="stylesheet" type="text/css" />
     <!-- SimpleLightbox plugin CSS-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
-    <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Custom animations CSS -->    <link href="css/animations.css" rel="stylesheet">
+    <!-- AOS CSS -->    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom animations CSS -->
+    <link href="./css/animations.css" rel="stylesheet">
     <!-- Language Switcher CSS -->
-    <link href="css/language-switcher.css" rel="stylesheet">
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="./css/language-switcher.css" rel="stylesheet">
+    <!-- Core theme CSS (includes Bootstrap)-->    <link href="./css/styles.css" rel="stylesheet" />
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "Tadabar - تَدَبَّرَ",
+        "description": "A Quran and Islamic application with no ads",
+        "operatingSystem": "Android",
+        "applicationCategory": "ReligiousApp",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Saeed Ahmed"
+        }
+    }
+    </script>
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="./assets/logoA12.png" as="image">
+    <link rel="preload" href="./css/styles.css" as="style">
+    <link rel="preload" href="./js/scripts.js" as="script">
 </head>
 
 <body id="page-top">
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-        <div class="container px-4 px-lg-5">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">        <div class="container px-4 px-lg-5">
             <a class="navbar-brand" href="#">
-                <img src="assets/logoA12.png" alt="Tadaber Logo" class="navbar-logo">
+                <img src="./assets/logoA12.png" alt="Tadaber Logo" class="navbar-logo">
                 <span id="brand-text">Tadaber - تَدَبَّرَ</span>
             </a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
@@ -43,11 +66,10 @@
                     <li class="nav-item"><a class="nav-link" href="#Feature">Features</a></li>
                     <li class="nav-item"><a class="nav-link" href="#Download">Download</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
-                </ul>
-                <div class="language-switcher">
-                    <a href="index.html">عربي</a>
+                </ul>                <div class="language-switcher">
+                    <a href="./index.html">عربي</a>
                     <span class="separator">|</span>
-                    <a href="index_en.html" class="active">English</a>
+                    <a href="./index_en.html" class="active">English</a>
                 </div>
             </div>
         </div>
@@ -399,7 +421,9 @@
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+    <script src="./js/scripts.js" defer></script>
+    <!-- Contact form handling -->
+    <script src="./js/contact-form.js" defer></script>
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <!-- * *                               SB Forms JS                               * *-->
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->

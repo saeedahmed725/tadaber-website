@@ -1,20 +1,9 @@
 {
   "version": 2,
-  "public": false,
-  "builds": [
-    {
-      "src": "index.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "index_en.html",
-      "use": "@vercel/static"
-    }
-  ],
+  "buildCommand": false,
+  "outputDirectory": ".",
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
+    { "handle": "filesystem" },
+    { "src": "/.*", "dest": "/index.html" }
   ]
 }

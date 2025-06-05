@@ -25,7 +25,7 @@ This is the official website for the Tadabar (تَدَبَّرَ) Islamic mobile
 
 ## Visit the Website
 
-Visit the website at [https://saeedahmed725.github.io/tadaber-website/](https://saeedahmed725.github.io/tadaber-website/)
+Visit the website at [Tadabar official website](https://tadabarofficial.vercel.app/)
 
 ## Download the App
 

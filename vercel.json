@@ -3,19 +3,11 @@
   "public": true,
   "builds": [
     {
-      "src": "server.js",
-      "use": "@vercel/node"
-    },
-    {
       "src": "index.html",
       "use": "@vercel/static"
     },
     {
       "src": "index_en.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "data-deletion.html",
       "use": "@vercel/static"
     },
     {
@@ -32,24 +24,11 @@
     }
   ],
   "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/server.js"
-    },
-    {
-      "src": "/data-deletion",
-      "dest": "/data-deletion.html"
-    },
     { "handle": "filesystem" },
     { "src": "/assets/(.*)", "dest": "/assets/$1" },
     { "src": "/css/(.*)", "dest": "/css/$1" },
     { "src": "/js/(.*)", "dest": "/js/$1" },
     { "src": "/index_en.html", "dest": "/index_en.html" },
     { "src": "/(.*)", "dest": "/index.html" }
-  ],
-  "env": {
-    "EMAIL_USER": "@email_user",
-    "EMAIL_PASS": "@email_pass",
-    "FRONTEND_URL": "@frontend_url"
-  }
+  ]
 }
